@@ -36,9 +36,13 @@ a {
   margin: -1px;
 } /*-----------------HEADER-----------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  border: 2px;
 }
+.header-container {
+  display: flex;
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -47,6 +51,7 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -71,12 +76,29 @@ a {
 .navigation-link:focus {
   color: var(--link-color);
 }
+.navigation-list {
+  display: flex;
+}
+.navigation-item + .navigation-item {
+  margin-left: 50px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.adress-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+  align-items: center;
+}
 
 button:hover,
 button:focus {
   color: #188ce8;
 }
 /*-----------------ADRESS----------------*/
+
 .adress-link {
   color: var(--adress-lnk-color);
 }
@@ -91,19 +113,37 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--adress-lnk-color);
 }
+.adress-list {
+  display: flex;
+}
 .adress-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--adress-lnk-color);
+  margin-left: 50px;
+  padding-right: 215px;
 }
+
+.adress-mail {
+  margin-left: 331px;
+}
+
 /*--------------------HERO--------------------*/
-.hero {
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 280px;
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  background-color: #2f303a;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -112,22 +152,30 @@ button:focus {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 .button-studio {
   font-family: inherit;
 }
 .hero-btn {
-  background-color: #2196f3;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background: #2196f3;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  margin-top: 60px;
 }
 .button-studio:hover,
 .button-studio:focus {
@@ -135,6 +183,7 @@ button:focus {
 }
 
 /*------------------SKILS----------------*/
+
 .skills-title {
   font-size: 14px;
   line-height: 1.14;
@@ -143,6 +192,10 @@ button:focus {
   color: var(--header-text-color);
   margin-bottom: 10px;
 }
+.skills-item + .skills-item {
+  margin-left: 30px;
+}
+
 .skills-text {
   font-size: 14px;
   line-height: 1.71;
@@ -153,6 +206,9 @@ button:focus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.skills-list {
+  display: flex;
+}
 /*------------GALERY-------------------*/
 .gallery-title {
   font-size: 36px;
@@ -162,14 +218,35 @@ button:focus {
   color: var(--header-text-color);
   margin-bottom: 50px;
 }
+.gallery-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
 .gallery {
+}
+
+.gallery-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+/*---------------------TEAM------------------*/
+
+.team-container {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/*---------------------TEAM------------------*/
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-list {
+  display: flex;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-title {
   font-size: 36px;
@@ -188,6 +265,9 @@ button:focus {
   color: var(--header-text-color);
   margin-bottom: 10px;
 }
+.team-item + .team-item {
+  margin-left: 30px;
+}
 .team-text {
   font-size: 16px;
   line-height: 1.18;
@@ -196,7 +276,7 @@ button:focus {
   color: var(--adress-lnk-color);
 }
 /*---------------FOOTER------------*/
-.footer {
+.footer-container {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
