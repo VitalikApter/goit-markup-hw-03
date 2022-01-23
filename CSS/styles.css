@@ -36,8 +36,9 @@ a {
   margin: -1px;
 } /*-----------------HEADER-----------------*/
 .header {
-  padding-top: 32px;
-  border: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid;
 }
 .header-container {
   display: flex;
@@ -78,6 +79,7 @@ a {
 }
 .navigation-list {
   display: flex;
+  margin-right: 331px;
 }
 .navigation-item + .navigation-item {
   margin-left: 50px;
@@ -87,8 +89,6 @@ a {
   align-items: center;
 }
 .adress-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
   align-items: center;
 }
@@ -116,6 +116,7 @@ button:focus {
 .adress-list {
   display: flex;
 }
+
 .adress-tel {
   font-weight: 500;
   font-size: 14px;
@@ -125,17 +126,18 @@ button:focus {
   margin-left: 50px;
   padding-right: 215px;
 }
-
-.adress-mail {
-  margin-left: 331px;
+.adress-container:last-child {
+  margin-right: 215px;
 }
 
 /*--------------------HERO--------------------*/
-
-.hero-container {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -149,13 +151,13 @@ button:focus {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: flex-end;
 }
 .button-studio {
   font-family: inherit;
 }
+
 .hero-btn {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -164,12 +166,7 @@ button:focus {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
-  width: 200px;
-  height: 50px;
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 30px;
   border-radius: 4px;
   border-color: transparent;
   margin-left: auto;
@@ -193,21 +190,26 @@ button:focus {
 .skills-item + .skills-item {
   margin-left: 30px;
 }
-
+.skills-item {
+  width: 270px;
+}
 .skills-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--adress-lnk-color);
 }
-.skills-container {
-  padding-top: 94px;
+.skills {
   padding-bottom: 94px;
 }
 .skills-list {
   display: flex;
 }
 /*------------GALERY-------------------*/
+.gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .gallery-title {
   font-size: 36px;
   line-height: 1.16;
@@ -232,17 +234,21 @@ button:focus {
 }
 
 /*---------------------TEAM------------------*/
-
-.team-container {
-  background-color: #f5f4fa;
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-list {
   display: flex;
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+}
+.team-container-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
 }
 .team-title {
   font-size: 36px;
@@ -260,7 +266,6 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--header-text-color);
   margin-bottom: 10px;
-  padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -279,17 +284,24 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--adress-lnk-color);
-  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 /*---------------FOOTER------------*/
-.footer-container {
+.footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.town {
+  color: #ffffff;
+  margin-bottom: 9px;
 }
 .footer-logo {
+  display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -309,6 +321,9 @@ button:focus {
 .footer-link:focus {
   color: var(--link-color);
 }
+.footer-item:last-child {
+  margin-bottom: 9px;
+}
 .footer-link-mail {
   font-size: 14px;
   line-height: 1.71;
@@ -316,23 +331,25 @@ button:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link-tel {
+  margin-bottom: 60px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 /*-------------PORTFOLIO--------*/
-
-.portfolio-container {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.navigation-btn-item:nth-last-child(-n + 5) {
+  margin-right: 8px;
+}
 .navigation-btn-item {
   cursor: pointer;
   align-items: center;
 }
-
 .btn-list-container {
   display: flex;
   justify-content: center;
@@ -344,7 +361,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 .portfolio-title {
@@ -353,8 +370,6 @@ button:focus {
   letter-spacing: 0.06em;
   color: var(--first-title-color);
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .portfolio-text {
@@ -362,17 +377,11 @@ button:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .portfolio-item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  margin-top: 30px;
 }
 
 .button {
@@ -389,7 +398,15 @@ button:focus {
   border-radius: 4px;
   border-color: transparent;
 }
-
+.portfolio-text-container {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
 /*----------------FOOTER---------*/
 .footer-link-web {
   color: #2196f3;
