@@ -79,17 +79,13 @@ a {
 }
 .navigation-list {
   display: flex;
-  margin-right: 331px;
+  margin-left: auto;
 }
 .navigation-item + .navigation-item {
   margin-left: 50px;
 }
 .navigation {
   display: flex;
-  align-items: center;
-}
-.adress-list {
-  margin-left: auto;
   align-items: center;
 }
 
@@ -115,6 +111,8 @@ button:focus {
 }
 .adress-list {
   display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .adress-tel {
@@ -123,11 +121,9 @@ button:focus {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--adress-lnk-color);
-  margin-left: 50px;
-  padding-right: 215px;
 }
-.adress-container:last-child {
-  margin-right: 215px;
+.adress-container + .adress-container {
+  margin-left: 50px;
 }
 
 /*--------------------HERO--------------------*/
@@ -200,7 +196,7 @@ button:focus {
   color: var(--adress-lnk-color);
 }
 .skills {
-  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .skills-list {
   display: flex;
@@ -237,6 +233,10 @@ button:focus {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list {
@@ -321,7 +321,7 @@ button:focus {
 .footer-link:focus {
   color: var(--link-color);
 }
-.footer-item:last-child {
+.mail-tel:not :last-child {
   margin-bottom: 9px;
 }
 .footer-link-mail {
