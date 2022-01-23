@@ -321,7 +321,7 @@ button:focus {
 .footer-link:focus {
   color: var(--link-color);
 }
-.mail-tel:not :last-child {
+.mail-tel:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-link-mail {
